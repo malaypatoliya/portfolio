@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <title>My Portfolio Website</title>
+</head>
+
+<body>
+
+    <!-- side-bar -->
+    <div id="sideBar" class="side-bar-container">
+        <div class="social_container">
+            <img src="/images/MALAY_PROFILE_PHOTO.jpg" alt="my photo">
+            <h1>Malay Patoliya</h1>
+            <div class="share-icon">
+                <a href="https://github.com/malaypatoliya"><i class="fab fa-git-square" id="i1"></i></a>
+                <a href="https://www.linkedin.com/in/malay-patoliya/"><i class="fab fa-linkedin" id="i2"></i></a>
+                <a href="https://twitter.com/patoliya_malay"><i class="fab fa-twitter-square" id="i3"></i></a>
+                <a href="https://www.instagram.com/malay_patoliya/"><i class="fab fa-instagram-square" id="i4"></i></a>
+                <a href="https://www.facebook.com/malay.patoliya.9"><i class="fab fa-facebook-square" id="i5"></i></a>
+            </div>
+        </div>
+        <div class="menu">
+            <a id="Home" href="#homeSection" onclick="removeSideBar()"><i class="fas fa-home"></i>Home</a>
+            <a id="About-Me" href="#aboutSection" onclick="removeSideBar()"><i class="fas fa-user"></i>About Me</a>
+            <a id="Education" href="#educationSection" onclick="removeSideBar()"><i
+                    class="fas fa-user-graduate"></i>Education</a>
+            <a id="Skills" href="#skillSection" onclick="removeSideBar()"><i class="fas fa-lightbulb"></i>Skills</a>
+            <a id="My-Projects" href="#projectSection" onclick="removeSideBar()"><i class="fas fa-user-tie"></i>My
+                Projects</a>
+            <a id="Contact" href="#contactSection" onclick="removeSideBar()"><i class="fas fa-id-badge"></i>Contact</a>
+        </div>
+
+        <a onclick="removeSideBar()"><i class="fas fa-times" id="close-icon"></i></a>
+
+    </div>
+
+
+    <!-- fix icon -->
+    <a onclick="addSideBar()"><i class="fas fa-bars" id="bar-icon"></i></a>
+
+    <!-- Home section -->
+    <section id="homeSection" class="hideShowClass">
+        <div class="home_container">
+            <img src="/images/MALAY_PHOTO.jpg" alt="my photo">
+            <div class="home_div">
+                <h1>I'm Malay Patoliya</h1>
+                <h2>Front-End Developer</h2>
+                <a href="/pdf/malay_patoliya_resume.pdf" download><i class="far fa-file-pdf"></i>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+
+    <section id="aboutSection" class="hideShowClass">
+        <div class="header_container">
+            <h1>About Me</h1>
+        </div>
+        <div class="about_container">
+            <h5>Hi... I'm Malay Patoliya. I am a <span>Front-End Web Developer.</span></h5>
+            <p>I love to do all those things which make me happy. One of them is developing amzing web Design and
+                Applications.</p>
+            <div class="contain">
+                <div>
+                    <p><span>Email Id: </span>malaypatoliya1619@gmail.com</p>
+                    <p><span>Phone: </span>+91 9510980591</p>
+                    <p><span>Website: </span>portfolio site</p>
+                    <p><span>Birthday: </span>19 November 2001</p>
+                </div>
+                <div>
+                    <p><span>Age: </span>20</p>
+                    <p><span>Address: </span>Jetpur, Gujrat, India.</p>
+                    <p><span>Degree: </span>Becholor Engineering, CE</p>
+                    <p><span>Freelance: </span>Available</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Education Section -->
+    <section id="educationSection" class="hideShowClass">
+
+        <div class="header_container">
+            <h1>Education</h1>
+        </div>
+
+        <div class="mainDiv">
+
+            <div class="Div">
+                <i class="fas fa-graduation-cap icon" aria-hidden="true"></i>
+                <h4 class="spanClass">June 2019 - Present</h4>
+                <h2>Bachelor of Engineering, CE (sem-6)</h2>
+                <h3>Govenment Engineering College, Bhavnagar</h3>
+                <h3 class="cpi"><span>CPI: 7.39/10</span></h3>
+            </div>
+
+            <div class="Div">
+                <i class="fas fa-graduation-cap icon" aria-hidden="true"></i>
+                <h4 class="spanClass">2017 - 2019</h4>
+                <h2> 11<sup>th</sup> - 12<sup>th</sup> Science (H.S.C.)</h2>
+                <h3>Imperial science school - Dhoraji</h3>
+                <h3 class="cpi"><span>Percentage: 84%</span></h3>
+            </div>
+
+            <div class="Div">
+                <i class="fas fa-graduation-cap icon" aria-hidden="true"></i>
+                <h4 class="spanClass">2016 - 2017</h4>
+                <h2> 10<sup>th</sup> Standard (S.S.C.)</h2>
+                <h3>Shreeji Vidhyalaya, Jetpur</h3>
+                <h3 class="cpi"><span>Percentage: 80%</span></h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skill Section  -->
+    <section id="skillSection" class="hideShowClass">
+        <div class="header_container">
+            <h1>My Skills</h1>
+        </div>
+
+        <div class="skill">
+            <div class="set">
+                <span class="fas fa-globe"></span>
+                <header>Web Development</header>
+                <div class="list">
+                    <i class="fab fa-html5"></i>
+                    <label>HTML</label>
+                    <div class="bar w1"></div>
+                    <label class="percentage r1">86%</label>
+                </div>
+                <div class="list">
+                    <i class="fab fa-css3-alt"></i>
+                    <label>CSS</label>
+                    <div class="bar w2"></div>
+                    <label class="percentage r2">70%</label>
+                </div>
+                <div class="list">
+                    <i class="fab fa-js"></i>
+                    <label>JavaScript</label>
+                    <div class="bar w3"></div>
+                    <label class="percentage r3">85%</label>
+                </div>
+            </div>
+
+            <div class="set">
+                <span class="fas fa-tools"></span>
+                <header>Framework</header>
+                <div class="list">
+                    <i class="fab fa-react"></i>
+                    <label>React.JS</label>
+                    <div class="bar w4"></div>
+                    <label class="percentage r4">60%</label>
+                </div>
+                <div class="list">
+                    <i class="fab fa-node-js"></i>
+                    <label>Node.JS</label>
+                    <div class="bar w5"></div>
+                    <label class="percentage r5">55%</label>
+                </div>
+                <div class="list">
+                    <i class="fab fa-bootstrap"></i>
+                    <label>BootStrap</label>
+                    <div class="bar w6"></div>
+                    <label class="percentage r6">80%</label>
+                </div>
+            </div>
+
+            <div class="set">
+                <span class="fas fa-code"></span>
+                <header>Programming skill</header>
+                <div class="list">
+                    <i class="fas fa-copyright"></i>
+                    <label>C</label>
+                    <div class="bar w7"></div>
+                    <label class="percentage r7">90%</label>
+                </div>
+                <div class="list">
+                    <i class="fas fa-terminal"></i>
+                    <label>C++</label>
+                    <div class="bar w8"></div>
+                    <label class="percentage r8">70%</label>
+                </div>
+                <div class="list">
+                    <i class="fab fa-java"></i>
+                    <label>Java</label>
+                    <div class="bar w9"></div>
+                    <label class="percentage r9">95%</label>
+                </div>
+                <div class="list">
+                    <i class="fab fa-python"></i>
+                    <label>Python</label>
+                    <div class="bar w10"></div>
+                    <label class="percentage r10">75%</label>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Project Section -->
+    <section id="projectSection" class="hideShowClass">
+        <div class="header_container">
+            <h1>My Project</h1>
+        </div>
+        <div class="container">
+            <div class="container-item">
+                <i class="fas fa-hamburger"></i>
+                <h2>Food Webpage</h2>
+                <span id="Pro1" onclick="showProject1()">View</span>
+            </div>
+            <div class="container-item">
+                <i class="far fa-sticky-note"></i>
+                <h2>Note App</h2>
+                <span id="Pro2" onclick="showProject2()">View</span>
+            </div>
+            <div class="container-item">
+                <i class="fas fa-calculator"></i>
+                <h2>Calculator</h2>
+                <span id="Pro3" onclick="showProject3()">View</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- project preview section -->
+    <div class="previewContainer" id="show1">
+        <i class="fas fa-times priviewClose" onclick="previewClose()"></i>
+        <h1>Food Ordering Webpage</h1>
+        <p>This webpage is created using HTML, CSS & JavaScript only.</p>
+        <video src="/videos/Food-Webpage-Demo.mp4" controls></video>
+        <div class="spanDiv">
+            <a href="https://malaypatoliya.github.io/Food-Ordering-Webpage/" target="_blank"><i class="fas fa-eye"></i> Preview</a>
+            <a href="https://github.com/malaypatoliya/Food-Ordering-Webpage" target="_blank"><i class="fas fa-cloud-download-alt"></i> Download</a>
+        </div>
+    </div>
+
+    <div class="previewContainer" id="show2">
+        <i class="fas fa-times priviewClose" onclick="previewClose()"></i>
+        <h1>Note App</h1>
+        <p>This website is created using HTML, Bootstrap & JavaScript only. Also use browser local storage to store Notes.</p>
+        <video src="/videos/Note-App-Demo.mp4" controls></video>
+        <div class="spanDiv">
+            <a href="https://malaypatoliya.github.io/Note-App/" target="_blank"><i class="fas fa-eye"></i> Preview</a>
+            <a href="https://github.com/malaypatoliya/Note-App" target="_blank"><i class="fas fa-cloud-download-alt"></i> Download</a>
+        </div>
+    </div>
+
+    <div class="previewContainer" id="show3">
+        <i class="fas fa-times priviewClose" onclick="previewClose()"></i>
+        <h1>Calculator</h1>
+        <p>This Calculator is created using HTML, CSS & JavaScript only.</p>
+        <video src="/videos/Calculator-Demo.mp4" controls></video>
+        <div class="spanDiv">
+            <a href="https://malaypatoliya.github.io/calculator/" target="_blank"><i class="fas fa-eye"></i> Preview</a>
+            <a href="https://github.com/malaypatoliya/calculator" target="_blank"><i class="fas fa-cloud-download-alt"></i> Download</a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contactSection" class="hideShowClass">
+        <div class="contactHeader">
+            <h1>Get in Touch</h1>
+        </div>
+        <div class="container">
+
+            <div class="container-item">
+                <i class="fas fa-phone-alt"></i>
+                <h2>Phone</h2>
+                <p>+91 9510980591</p>
+            </div>
+
+            <div class="container-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h2>Address</h2>
+                <p>Takudipara Jetpur, Gujrat, India</p>
+            </div>
+
+            <div class="container-item">
+                <i class="fas fa-envelope"></i>
+                <h2>Email</h2>
+                <a href="mailto:malaypatoliya1619@gmail.com">malaypatoliya1619@gmail.com</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <section class="footer hideShowClass">
+        <div class="share">
+            <a href="https://github.com/malaypatoliya"><i class="fab fa-git-square" id="i1"></i></a>
+            <a href="https://www.linkedin.com/in/malay-patoliya/"><i class="fab fa-linkedin" id="i2"></i></a>
+            <a href="https://twitter.com/patoliya_malay"><i class="fab fa-twitter-square" id="i3"></i></a>
+            <a href="https://www.instagram.com/malay_patoliya/"><i class="fab fa-instagram-square" id="i4"></i></a>
+            <a href="https://www.facebook.com/malay.patoliya.9"><i class="fab fa-facebook-square" id="i5"></i></a>
+        </div>
+
+        <p class="credit">Designed & Managed By <span>Malay Patoliya</span></p>
+    </section>
+
+    <!-- JavaScript file -->
+    <script src="/main.js"></script>
+</body>
+
+</html>
