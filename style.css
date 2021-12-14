@@ -90,7 +90,7 @@ html, body{
 .side-bar-container .social_container img{
     height:110px;
     width: 110px;
-    border-radius: 50%;
+    border-radius: 25%;
     box-shadow: 0rem .2rem 1.3rem var(--light);
 }
 
